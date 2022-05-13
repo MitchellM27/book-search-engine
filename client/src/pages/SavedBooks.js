@@ -40,7 +40,6 @@ const SavedBooks = () => {
           cache.writeQuery({ query: GET_ME , data: {data: {...data.me.savedBooks}}})
         }
       });
-      // upon success, remove book's id from localStorage
       removeBookId(bookId);
     } catch (err) {
       console.error(err);
